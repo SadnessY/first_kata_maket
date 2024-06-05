@@ -30,7 +30,8 @@
     font-style: normal;
 }
 body {
-    margin: 0;
+    max-width: 1121px;
+    margin: 0 auto;
     font-family: "TT Lakes", sans-serif;
     color: #1B1C21;
 }
@@ -158,8 +159,18 @@ body {
 .content__text-part--hidden, .text-part__text--hidden, .main__repair, .main__checkstatus {
     display: none;
 }
+button:hover {
+    cursor: pointer;
+    filter: hue-rotate(0.5turn);
+    transition: filter 1s;
+}
+.scroll__item:hover {
+    cursor: pointer;
+    color: red;
+    transition: color .5s;
+}
 
-@media (min-width: 500px) {
+@media (min-width: 700px) {
     .header__call, .header__chat, .header__profile {
         display: inline;
         margin-left: 16px;
